@@ -11,3 +11,5 @@ let aluno: Pessoa = new Aluno("Aecio", 23, "456321");
 
 prof.print();
 aluno.print();
+prof.caminhar();
+aluno.caminhar();

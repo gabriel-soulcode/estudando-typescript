@@ -7,4 +7,4 @@ import { Gato } from "./gato";
 let gato: Gato = new Gato();
 gato.comer(); // Metodo herdado da classe Animal
 gato.miar(); // Metodo implementado na classe Gato
-gato.print(); // Metodo herdado da classe Animal e implementado na classe Gato
+gato.print(); // Metodo implementado na classe Gato

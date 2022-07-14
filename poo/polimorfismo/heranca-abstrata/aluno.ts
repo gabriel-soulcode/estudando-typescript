@@ -12,6 +12,7 @@ export class Aluno extends Pessoa {
 
     print(): void {
         console.log(`
+        +--------------ALUNO--------------+
         Nome: ${this.nome}
         Idade: ${this.idade}
         Matricula: ${this.matricula}

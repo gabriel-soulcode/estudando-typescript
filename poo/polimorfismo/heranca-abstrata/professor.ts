@@ -12,9 +12,10 @@ export class Professor extends Pessoa {
 
     print(): void {
         console.log(`
+        +------------PROFESSOR------------+
         Nome: ${this.nome}
         Idade: ${this.idade}
         Salario: ${this.salario}
         `);
-    };
+    }
 }

@@ -36,10 +36,7 @@ class Produto {
     }
 }
 
-let produto: Produto = new Produto();
-produto.descricao = "Arroz";
-produto.codigo = "145236";
-produto.preco = 4.5;
+let produto: Produto = new Produto("Arroz", "41526398", 4.5);
 console.log(
     "Descricao: " + produto.descricao +
     "\nCodigo: " + produto.codigo +

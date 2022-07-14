@@ -1,14 +1,10 @@
 class Computer {
 
-    constructor(processador: string, memoriaRam: number, offBoard: boolean) {
-        this.processador = processador;
-        this.memoriaRam = memoriaRam;
-        this.offBoard = offBoard;
+    constructor(
+        public processador: string,
+        public memoriaRam: number,
+        public offBoard: boolean) {
     }
-
-    processador: string;
-    memoriaRam: number;
-    offBoard: boolean;
 
     getConfiguration(): string {
         return `
