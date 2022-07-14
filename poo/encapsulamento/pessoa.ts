@@ -1,7 +1,11 @@
+/*
+ENCAPSULAMENTO trata-se de definir propriedades privadas fazendo com que outras classes não possam acessa-las e modifica-las diretamente, encapsulando as propriedades dentro da classe. Obrigando o desenvolvedor a usar os metodos de manipulação GET e SET para acessar e modificar as propriedades indiretamente.
+*/
+
 class Pessoa {
     private nome: string;
     private idade: number;
-    private sexo: boolean; //0 M 1 F
+    private sexo: string;
 
     constructor(nome: string, idade: number, sexo: string) {
         this.setNome(nome);
@@ -9,7 +13,7 @@ class Pessoa {
         this.setSexo(sexo);
     }
 
-    // getters (retornam o valor) e setters (inserem o valor)
+    // GET E SET
     public getNome(): string {
         return this.nome;
     }
@@ -23,15 +27,10 @@ class Pessoa {
         this.idade = idade;
     }
     public getSexo(): string {
-        return this.sexo ? "Feminino" : "Masculino";
+        return this.sexo;
     }
     public setSexo(sexo: string): void {
-        if(sexo == "M") {
-            this.sexo = false;
-        }
-        else if(sexo == "F") {
-            this.sexo = true;
-        }
+        this.sexo = sexo;
     }
 }
 

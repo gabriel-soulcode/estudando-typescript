@@ -7,7 +7,7 @@ export class Gato extends Animal {
     }
 
     public print() {
-        console.log(this.nome + " " + this.classe);
+        console.log(this.classe + " -> " + this.nome);
     }
     
     public miar() {

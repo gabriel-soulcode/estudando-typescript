@@ -1,4 +1,5 @@
 export class Animal {
+    
     protected nome: string;
     protected classe: string;
 
